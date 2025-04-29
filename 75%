@@ -1,0 +1,23 @@
+local webhookUrl = "https://discord.com/api/webhooks/1366844495236304916/U_3J879vIK_Qr7sd_69N2wc6SYQD_2HwT8Nld-PI6xM-4xdlbDgEF51Xl5RM1RnmzB5_"
+
+local whitelist = {
+    ["Meshal1936"] = true,
+    ["GBMNGW97"] = true
+}
+
+local player = game.Players.LocalPlayer
+local playerName = player.Name
+
+if not whitelist[playerName] then
+    return -- غير مصرح له، لا تنفذ شيء
+end
+
+-- تنفيذ السكربت الحقيقي
+local ball = workspace:FindFirstChild("TPSSystem") and workspace.TPSSystem:FindFirstChild("TPS")
+if ball then
+    ball.Velocity = Vector3.new(100, 100, 100)
+end
+
+print("Work") -- يطبع في F9 Console
+
+-- إرسال رسالة إلى Webhook
