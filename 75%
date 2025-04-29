@@ -9,15 +9,13 @@ local player = game.Players.LocalPlayer
 local playerName = player.Name
 
 if not whitelist[playerName] then
-    return -- غير مصرح له، لا تنفذ شيء
+    return 
 end
 
--- تنفيذ السكربت الحقيقي
+
 local ball = workspace:FindFirstChild("TPSSystem") and workspace.TPSSystem:FindFirstChild("TPS")
 if ball then
     ball.Velocity = Vector3.new(100, 100, 100)
 end
 
-print("Work") -- يطبع في F9 Console
-
--- إرسال رسالة إلى Webhook
+print("Work") 
