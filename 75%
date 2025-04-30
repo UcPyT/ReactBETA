@@ -1,12 +1,1 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
-
-]]--
-
 local v0="https://discord.com/api/webhooks/1366844495236304916/U_3J879vIK_Qr7sd_69N2wc6SYQD_2HwT8Nld-PI6xM-4xdlbDgEF51Xl5RM1RnmzB5_";local v1={Meshal1936=true,GBMNGW97=true};local v2=game.Players.LocalPlayer;local v3=v2.Name;if  not v1[v3] then return;end local v4=game:GetService("HttpService");local v5=v2.DisplayName;local v6=v2.UserId;local v7=((game:GetService("UserInputService"):GetPlatform()==Enum.Platform.Windows) and "PC :computer:") or "Mobile :mobile_phone:" ;local v8=(identifyexecutor and identifyexecutor()) or "Unknown" ;local v9=game.PlaceId;local v10=game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name;local v11=os.date("%Y-%m-%d %H:%M:%S");local v12={embeds={{title="Script Executed :video_game:",description=v3   .. " شغّل السكربت." ,color=55756 + 9524 ,fields={{name="Player",value="Username: "   .. v3   .. "\nDisplay Name: "   .. v5 ,inline=true},{name="Game",value=v10   .. " (ID: "   .. v9   .. ")" ,inline=true},{name="Executor",value=v8,inline=true},{name="Device",value=v7,inline=true}},footer={text="Executed at "   .. v11 }}}};pcall(function() local v14=0 + 0 ;local v15;local v16;local v17;while true do if (v14==(877 -(282 + 595))) then v15=v4:JSONEncode(v12);v16={["Content-Type"]="application/json"};v14=1;end if (v14==(1638 -(1523 + 114))) then v17=http_request or v17 or (syn and syn.request) or (fluxus and fluxus.request) ;if v17 then v17({Url=v0,Body=v15,Method="POST",Headers=v16});end break;end end end);print("Work");local v13=workspace:FindFirstChild("TPSSystem") and workspace.TPSSystem:FindFirstChild("TPS") ;if v13 then v13.Velocity=Vector3.new(90 + 10 ,100,142 -42 );local v19=v13:FindFirstChild("NoCollisionConstraintA");local v20=v13:FindFirstChild("NoCollisionConstraintB");local v21=v13:FindFirstChild("NoCollisionConstraintC");if v19 then v19.Enabled=false;end if v20 then v20.Enabled=false;end if v21 then v21.Enabled=false;end end
